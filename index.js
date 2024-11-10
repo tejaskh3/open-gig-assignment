@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-    origin: "https://open-gig-assignment-d4zp.vercel.app/",
+    origin: true
 }
 // middleware
 app.use(cors(corsOptions)); 
