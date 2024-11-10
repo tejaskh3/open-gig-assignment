@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const api = axios.create({
-    baseURL: 'http://localhost:8888/api/v1'  // Replace with your backend server URL
+const api = axios.create({ // TODO: add in env
+    baseURL: 'https://open-gig-assignment-qdm7-msf33g153-tejaskh3s-projects.vercel.app/api/v1/' 
 });
 
 export const fetchPosts = () => api.get('/posts');
