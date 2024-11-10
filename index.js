@@ -8,8 +8,11 @@ dotenv.config();
 //express app
 const app = express();
 
+const corsOptions = {
+    origin: "https://open-gig-assignment-d4zp.vercel.app/",
+}
 // middleware
-app.use(cors()); 
+app.use(cors(corsOptions)); 
 app.use(express.json()); 
 app.use("/api/v1/posts", postsRouter);
 
